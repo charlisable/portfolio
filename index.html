@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+     <!-- mobile menu svg -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <title>Charli</title>
 </head>
@@ -20,20 +26,28 @@
                 </ul>
                 <div class="mobile-menu">
                     <!-- mobile menu svg -->
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Title Section -->
+    <main>
+         <!-- Title Section -->
     <section class="title-section">
         <div class="title-text-container">
             <h2>Welcome</h2>
             <p>words words words</p>
-            <div class="personal-links">
+            <div class="personal-links-container">
                 <button class="contact-button">Contact Me</button>
-                <div class="personal-link"></div>
-                <div class="personal-link"></div>
+                <a class="personal-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+                </a>
+                <a class="personal-link">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                </a>
             </div>
         </div>
         <div class="title-img">
@@ -44,15 +58,15 @@
     <!-- Projects Section -->
     <section class="project-section">
         <!-- title -->
-        <div class="projects-title">
+        <div class="project-section-title">
             <h2>Featured Projects</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias at quos incidunt! Architecto laboriosam illo, optio modi tempora est explicabo nam!</p>
         </div>
 
-        <!-- Project 1 -->
+        <!-- If These Lands Could Talk Project -->
         <div class="project">
             <div class="project-img">
-                <img src="https://placedog.net/500" alt="">
+                <img src="/assets/itlct-home.png" alt="If these lands could talk website home page image">
             </div>
             <div class="project-text">
                 <h3>If These Lands Could Talk</h3>
@@ -82,7 +96,7 @@
 
         <!-- image for mobile only -->
         <div class="mobile-image">
-            <img src="" alt="">
+            <img src="https://placedog.net/500" alt="">
         </div>
     </section>
 
@@ -105,17 +119,10 @@
         <div class="contact-form">
             <form action="/action_page.php">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="First name..">
           
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <!-- <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select> -->
+              <input type="text" id="lname" name="lastname" placeholder="Last name..">
           
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Write your message here" style="height:100px"></textarea>
@@ -124,7 +131,13 @@
             </form>
           </div>
     </section>
-    <p>copyright Charli Ballantyne</p>
-    
+    </main>
+   
+    <footer>
+        <p>copyright Charli Ballantyne</p>
+    </footer>
+
+    <!-- script -->
+    <script src="/script.js"></script>
 </body>
 </html>

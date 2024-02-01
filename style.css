@@ -8,6 +8,16 @@ html {
 *:after {
 	box-sizing: inherit;
 }
+:root {
+    /* Font sizes */
+	--font16: 1rem;
+	--font21: 1.313rem;
+	--font24: 1.5rem;
+	--font28: 1.75rem;
+	--font36: 2.25rem;
+	--font46: 2.875rem;
+	--font56: 3.5rem;
+}
 body {
 	background-color: whitesmoke;
     color: black;
@@ -16,8 +26,19 @@ body {
 
 
 img {
-	max-width: 100%;
+	width: 100%;
 	display: block;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: rgb(106, 96, 129);
+}
+
+li {
+    list-style-type: none;
 }
 
 /* Header Section */
@@ -29,6 +50,7 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-links {
@@ -43,6 +65,12 @@ section {
 }
 
 /* title section */
+.personal-links-container {
+    display: flex;
+}
+.personal-link img {
+    width: 35px;
+}
 .title-section {
     display: flex;
 }
@@ -60,7 +88,14 @@ section {
     align-items: center;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 /* Project Section */
+.project-section-title {
+    margin-bottom: 40px;
+}
 .project {
     display: flex;
     gap: 50px;
@@ -131,3 +166,79 @@ input[type=text], select, textarea {
     background-color: #545b58;
   }  
   
+
+  /* Media Queries */
+  @media screen and (max-width: 600px) {
+    /* title section */
+    section {
+        flex-direction: column;
+    }
+
+    /* header */
+    .header-links {
+        background-color: white;
+        width: 100px;
+        border-radius: 5px;
+        text-align: center;
+
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+
+        transition: 0.5s;
+
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        
+        /* left: 50px; */
+        padding-right: 10px;
+    }
+    .header-links.active {
+        left: 55%;
+    }
+
+    .header-links a {
+        text-decoration: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    /* title section */
+    .title-section {
+        align-items: center;
+        gap: 20px;
+    }
+    .title-text-container,
+    .title-img {
+        width: 100%;
+    }
+   
+
+    /* project section */
+    .project {
+        flex-direction: column;
+    }
+    .project-img,
+    .project-text {
+        width: 100%;
+    }
+
+    /* About me section */
+    .mobile-image {
+        display: block;
+    }
+
+    /* Connect section */
+    .connect-section {
+        gap: 20px;
+    }
+
+    .connect-info,
+    .contact-form {
+        width: 100%;
+    }
+
+  }
