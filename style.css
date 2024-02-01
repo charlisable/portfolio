@@ -1,0 +1,133 @@
+html {
+	box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	background-color: whitesmoke;
+    color: black;
+	/* font-family: ; */
+}
+
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+}
+.header-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-links {
+    display: flex;
+    gap: 20px;
+}
+
+section {
+    width: 90%;
+    margin: 110px auto;
+
+}
+
+/* title section */
+.title-section {
+    display: flex;
+}
+.title-text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Project Section */
+.project {
+    display: flex;
+    gap: 50px;
+}
+
+.project-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* About Me Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+}
+.about-me-title {
+    width: 40%;
+}
+.about-me-text {
+    width: 60%;
+
+}
+
+.mobile-image {
+    display: none;
+}
+
+
+/* Contact Section */
+.connect-section {
+    display: flex;
+    justify-content: center;
+}
+.connect-info {
+    width: 50%;
+}
+.contact-form {
+    width: 50%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #524d5f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #545b58;
+  }  
+  

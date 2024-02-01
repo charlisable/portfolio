@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-section">
             <h1>Charli Ballantyne</h1>
             <div>
                 <ul class="header-links">
@@ -26,7 +26,7 @@
     </header>
 
     <!-- Title Section -->
-    <section>
+    <section class="title-section">
         <div class="title-text-container">
             <h2>Welcome</h2>
             <p>words words words</p>
@@ -36,7 +36,9 @@
                 <div class="personal-link"></div>
             </div>
         </div>
-        <div class="title-img"></div>
+        <div class="title-img">
+            <img src="https://placedog.net/500" alt="">
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -50,7 +52,7 @@
         <!-- Project 1 -->
         <div class="project">
             <div class="project-img">
-                <img src="" alt="">
+                <img src="https://placedog.net/500" alt="">
             </div>
             <div class="project-text">
                 <h3>If These Lands Could Talk</h3>
@@ -58,7 +60,7 @@
 
                 <div class="project-info"></div>
                 <div class="project-links">
-                    <a href="">Live Demo</a>
+                    <a href="https://iftheselandscouldtalk.org/">Live Demo</a>
                     <a href="">See GITHUB</a>
                 </div>
             </div>
@@ -99,7 +101,28 @@
                 </a>
             </div>
         </div>
-        <div class="contact-form"></div>
+        
+        <div class="contact-form">
+            <form action="/action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <!-- <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select> -->
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here" style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
     </section>
     <p>copyright Charli Ballantyne</p>
     
