@@ -31,7 +31,9 @@ img {
 }
 
 a {
+    text-decoration: none;
     color: black;
+    padding: 10px 0px;
 }
 a:hover {
     color: rgb(106, 96, 129);
@@ -41,7 +43,7 @@ li {
     list-style-type: none;
 }
 
-/* Header Section */
+/* Header Nav Section */
 header {
     width: 100%;
 }
@@ -58,6 +60,11 @@ header {
     gap: 20px;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+/* for all sections */
 section {
     width: 90%;
     margin: 110px auto;
@@ -65,13 +72,9 @@ section {
 }
 
 /* title section */
-.personal-links-container {
-    display: flex;
-}
-.personal-link img {
-    width: 35px;
-}
 .title-section {
+    margin-top: 0px;
+    padding-top: 100px;
     display: flex;
 }
 .title-text-container {
@@ -79,8 +82,22 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
+.personal-links-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-button {
+    border-radius: 10px;
+    height: 35px;
+    border-color: rgb(30, 83, 167);
+}
+.personal-link svg {
+    width: 30px;
+}
+
 .title-img {
     width: 50%;
     display: flex;
@@ -88,15 +105,16 @@ section {
     align-items: center;
 }
 
-.mobile-menu {
-    display: none;
-}
+
 
 /* Project Section */
 .project-section-title {
     margin-bottom: 40px;
 }
 .project {
+    border: 1px grey solid;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
     gap: 50px;
 }
@@ -169,38 +187,39 @@ input[type=text], select, textarea {
 
   /* Media Queries */
   @media screen and (max-width: 600px) {
-    /* title section */
+    /* all sections */
     section {
         flex-direction: column;
     }
+    h2, h3 {
+        text-align: center;
+    }
 
     /* header */
+    .header-links-container {
+        position: relative;
+    }
     .header-links {
+        width: 150px;
         background-color: white;
-        width: 100px;
         border-radius: 5px;
+        padding: 10px;
         text-align: center;
 
         flex-direction: column;
         align-items: center;
-        padding-left: 10px;
-
-        transition: 0.5s;
-
-        position: fixed;
-        left: 100%;
-        top: 70px;
         
-        /* left: 50px; */
-        padding-right: 10px;
-    }
-    .header-links.active {
-        left: 55%;
+        position: absolute;
+        top: -600%;
+        right: 10px;
+        transition: 0.5s;
     }
 
-    .header-links a {
-        text-decoration: none;
+    .header-links.active {
+        top: 15px;
     }
+
+    
 
     .mobile-menu {
         display: block;
@@ -211,9 +230,14 @@ input[type=text], select, textarea {
         align-items: center;
         gap: 20px;
     }
-    .title-text-container,
+    
     .title-img {
         width: 100%;
+    }
+    .title-text-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
     }
    
 
@@ -227,8 +251,13 @@ input[type=text], select, textarea {
     }
 
     /* About me section */
+    .about-me-title,
+    .about-me-text {
+        width: 100%;
+    }
     .mobile-image {
         display: block;
+        margin-top: 20px;
     }
 
     /* Connect section */

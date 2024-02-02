@@ -21,5 +21,3 @@ mainBody.addEventListener('click', clickBody);
 function clickBody() {
 	navMenu.classList.remove('active');
 }
-
-console.log(navMenu);
