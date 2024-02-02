@@ -111,11 +111,6 @@ section {
     flex-direction: column;
     justify-content: center;
 }
-.personal-links-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
 .contact-button {
     border-radius: 15px;
@@ -124,8 +119,8 @@ section {
     border: none;
 }
 
-/* hover or click button will make these pop up */
-.personal-link svg {
+.personal-link svg,
+.personal-link img {
     width: 30px;
 }
 
@@ -185,7 +180,7 @@ section {
 }
 
 
-/* Contact Section */
+/* Connect Section */
 .connect-section .wrapper {
     display: flex;
     justify-content: center;
@@ -193,6 +188,28 @@ section {
 .connect-info {
     width: 50%;
 }
+
+.personal-links-container {
+    display: flex;
+    align-items: center;
+}
+.personal-link {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.personal-link:hover {
+     background-color: var(--color2);
+}
+
+.linkedin-path-two:hover {
+    fill: var(--color2)
+}
+
 .contact-form {
     width: 50%;
 }
