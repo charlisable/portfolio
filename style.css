@@ -25,7 +25,12 @@ html {
 	--font36: 2.25rem;
 	--font46: 2.875rem;
 	--font56: 3.5rem;
+
+    /* spacing */
+    --section-margin: 100px;
 }
+
+
 body {
 	background-color: var(--background-color);
     color: black;
@@ -74,6 +79,9 @@ header {
     align-items: center;
 }
 
+h1 {
+    font-size: 1.5rem;
+}
 .header-links {
     display: flex;
     gap: 20px;
@@ -86,7 +94,7 @@ header {
 
 /* for all sections */
 section {
-    padding: 100px 0px;
+    padding: var(--section-margin) 0px;
     width: 100%;
 }
 
