@@ -9,6 +9,14 @@ html {
 	box-sizing: inherit;
 }
 :root {
+    /* colors */
+    --background-color: whitesmoke;
+    --color1: #9A638A;
+    --color2: #D6A390;
+    --color3: #D9B0AE;
+    --color4: #5E3F3A;
+    --color5: #FFFCF3;
+    --color6: #F4E8FE;
     /* Font sizes */
 	--font16: 1rem;
 	--font21: 1.313rem;
@@ -19,11 +27,14 @@ html {
 	--font56: 3.5rem;
 }
 body {
-	background-color: whitesmoke;
+	background-color: var(--background-color);
     color: black;
 	/* font-family: ; */
 }
 
+h2, h3 {
+    margin: 0;
+}
 
 img {
 	width: 100%;
@@ -43,6 +54,14 @@ li {
     list-style-type: none;
 }
 
+/* wrapper */
+.wrapper {
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
 /* Header Nav Section */
 header {
     width: 100%;
@@ -58,6 +77,7 @@ header {
 .header-links {
     display: flex;
     gap: 20px;
+    padding-left: 0px;
 }
 
 .mobile-menu {
@@ -66,16 +86,16 @@ header {
 
 /* for all sections */
 section {
-    width: 90%;
-    margin: 110px auto;
-
+    padding: 100px 0px;
+    width: 100%;
 }
 
 /* title section */
 .title-section {
-    margin-top: 0px;
-    padding-top: 100px;
-    display: flex;
+    background-color: var(--color3);
+}
+.title-section .wrapper {
+     display: flex;
 }
 .title-text-container {
     width: 50%;
@@ -90,10 +110,13 @@ section {
 }
 
 .contact-button {
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 120px;
     height: 35px;
-    border-color: rgb(30, 83, 167);
+    border: none;
 }
+
+/* hover or click button will make these pop up */
 .personal-link svg {
     width: 30px;
 }
@@ -134,9 +157,13 @@ section {
 
 /* About Me Section */
 .about-section {
+    background-color: var(--color3);
+}
+
+.about-section .wrapper {
     display: flex;
     justify-content: center;
-}
+} 
 .about-me-title {
     width: 40%;
 }
@@ -151,7 +178,7 @@ section {
 
 
 /* Contact Section */
-.connect-section {
+.connect-section .wrapper {
     display: flex;
     justify-content: center;
 }
@@ -172,23 +199,28 @@ input[type=text], select, textarea {
     resize: vertical;
   }
   input[type=submit] {
-    background-color: #524d5f;
+    background-color: var(--color1);
     color: white;
     padding: 12px 20px;
+    margin-top: 10px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
   }
   
   input[type=submit]:hover {
-    background-color: #545b58;
+    background-color: var(--color3);
+    color: black;
   }  
   
 
   /* Media Queries */
   @media screen and (max-width: 600px) {
     /* all sections */
-    section {
+    .wrapper {
+        width: 90%;
+    }
+    section .wrapper {
         flex-direction: column;
     }
     h2, h3 {
@@ -226,7 +258,7 @@ input[type=text], select, textarea {
     }
 
     /* title section */
-    .title-section {
+    .title-section .wrapper {
         align-items: center;
         gap: 20px;
     }
@@ -251,6 +283,9 @@ input[type=text], select, textarea {
     }
 
     /* About me section */
+    .about-section .wrapper {
+        flex-direction: column;
+    }
     .about-me-title,
     .about-me-text {
         width: 100%;
@@ -261,7 +296,7 @@ input[type=text], select, textarea {
     }
 
     /* Connect section */
-    .connect-section {
+    .connect-section .wrapper {
         gap: 20px;
     }
 
