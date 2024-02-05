@@ -211,10 +211,11 @@ section {
 .skills-wrapper h3 {
     width: fit-content;
     margin: 0 auto;
-    color: var(--color4);
-    /* text-shadow: 2px 2px var(--color4); */
 }
+
 .skills-container {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -224,17 +225,15 @@ section {
     padding: 0px;
 }
 
-
-
 .skills-container li {
     width: min-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 13%;
 }
 .skills-container li p {
-    font-size: 13px;
-    /* color: black; */
+    text-align: center;
 }
 
 /* styles for google font svg's responsive design, accessibility */
@@ -264,8 +263,9 @@ section {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .personal-links-container {
@@ -408,23 +408,24 @@ input[type=text], select, textarea {
         gap: 30px;
     }
     .about-me-title,
-    .about-me-text,
-    .skills-container {
+    .about-me-text {
         width: 100%;
     }
-
+    
     .about-me-title h2 {
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 10px;
-        /* border-bottom: var(--background-color) 3px solid;    */
     }
 
-   
     .skills-container {
-        flex-direction: row;
+        width: 90%;
+        margin: 0 auto;
     }
     
+    .skills-container li {
+        flex-basis: 25%;
+    }
 
     /* Connect section */
     .connect-section .wrapper {
