@@ -17,14 +17,6 @@ html {
     --color4: #5E3F3A;
     --color5: #FFFCF3;
     --color6: #F4E8FE;
-    /* Font sizes */
-	--font16: 1rem;
-	--font21: 1.313rem;
-	--font24: 1.5rem;
-	--font28: 1.75rem;
-	--font36: 2.25rem;
-	--font46: 2.875rem;
-	--font56: 3.5rem;
 
     /* spacing */
     --section-margin: 100px;
@@ -200,16 +192,28 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+
+    border-bottom: black 3px solid;
+    padding-bottom: 50px;
 } 
 .about-me-title {
-    width: 25%;
+    width: 40%;
 }
 .about-me-text {
-    width: 50%;
+    width: 60%;   
+}
 
+/* skills container */
+.skills-wrapper {
+    margin-top: 100px;
+}
+
+.skills-wrapper h3 {
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--background-color);
 }
 .skills-container {
-    width: 25%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -219,8 +223,10 @@ section {
     padding: 0px;
 }
 
+
+
 .skills-container li {
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     max-width: 60px;
 }
 
@@ -251,7 +257,7 @@ section {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -392,7 +398,7 @@ input[type=text], select, textarea {
     /* About me section */
     .about-section .wrapper {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
     .about-me-title,
     .about-me-text,
@@ -404,11 +410,10 @@ input[type=text], select, textarea {
         width: fit-content;
         margin: 0 auto;
         margin-bottom: 10px;
-        border-bottom: whitesmoke 3px solid;
-        
+        /* border-bottom: var(--background-color) 3px solid;    */
     }
+
    
-    /* skills container */
     .skills-container {
         flex-direction: row;
     }
