@@ -100,7 +100,12 @@ h1 {
 .header-links li:hover {
     transform: scale(1.1);
     /* transition: .2s; */
+    background-color: var(--color3);
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
 }
+
 .mobile-menu {
     display: none;
 }
@@ -179,7 +184,11 @@ section {
     margin-right: 20px;
 }
 .project-links div:hover {
-    transform: scale(1.1);
+    background-color: var(--color3);
+    padding: 5px;
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: .5s;
 }
 
 /* About Me Section */
@@ -189,7 +198,7 @@ section {
 
 .about-section .wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
 } 
 .about-me-title {
@@ -202,14 +211,22 @@ section {
 .skills-container {
     width: 25%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 0px;
 }
 
+.skills-container li {
+    flex-basis: 50%;
+    max-width: 60px;
+}
+
+/* styles for google font svg's responsive design, accessibility */
 .material-symbols-outlined {
+    filter: invert(99%) sepia(64%) saturate(42%) hue-rotate(185deg) brightness(111%) contrast(92%);
     font-size: 60px;
   font-variation-settings:
   'FILL' 0,
@@ -219,8 +236,7 @@ section {
 }
 
 
-.skills-container svg,
-.skills-container {
+.skills-container svg {
     width: 60px;
 }
 
@@ -257,6 +273,7 @@ section {
      background-color: var(--color3);
 }
 
+/* svg inner color for hover */
 .linkedin-path-two:hover {
     fill: var(--color2)
 }
@@ -288,6 +305,13 @@ input[type=text], select, textarea {
     background-color: var(--color3);
     color: black;
   }  
+
+
+  /* footer */
+  footer {
+    width: 90%;
+    margin: 0 auto;
+  }
   
 
   /* Media Queries */
@@ -324,13 +348,14 @@ input[type=text], select, textarea {
     }
 
     .header-links.active {
-        top: 25px;
+        top: 40px;
     }
 
     
 
     .mobile-menu {
         display: block;
+        cursor: pointer;
     }
 
     /* title section */

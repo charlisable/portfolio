@@ -9,6 +9,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
      <!-- accessibility svg -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+     <!-- responsive svg -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      <!-- mobile menu svg -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="normalize.css">
@@ -21,11 +23,11 @@
             <h1>Charli Ballantyne</h1>
             <nav class="header-links-container">
                 <ul class="header-links">
-                    <li><a href="#">Work</a></li>
+                    <li><a href="#projects">Work</a></li>
                         
-                    <li> <a href="#">About</a></li>
+                    <li> <a href="#about">About</a></li>
 
-                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="#contact">Contact</a></li>
                 </ul>
                 <div class="mobile-menu">
                     <!-- mobile menu svg -->
@@ -43,7 +45,7 @@
         <div class="wrapper">
             <div class="title-text-container">
                 <h2>Charli Ballantyne</h2>
-                <h3>Front-end Web Developer</h3>
+                <h3>Front-End Web Developer</h3>
                 <p>I'm a junior developer based in Winnipeg, Manitoba</p>
                 <div class="personal-links-container">
                     <button class="contact-button">Contact Me</button>
@@ -58,7 +60,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="project-section">
+    <section class="project-section" id="projects">
         <div class="wrapper">
                 <!-- title -->
             <div class="project-section-title">
@@ -92,13 +94,13 @@
     </section>
 
     <!-- About Me Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="wrapper">
            <div class="about-me-title">
             <h2>About Me</h2>
             </div>
             <div class="about-me-text">
-                <h3>Front-end web developer</h3>
+                <h3>Front-End web developer</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus recusandae excepturi porro quam sed error commodi exercitationem illo tenetur. Dolor quos dolore, totam voluptatem fugit dolores molestiae unde quidem.</p>
 
                 <a href="">More about me</a>
@@ -130,33 +132,39 @@
                 <li>
                     <span class="material-symbols-outlined">
                         accessibility_new
-                        </span>
+                    </span>
                 </li>
 
                 <!-- responsive design -->
                 <li>
-                    <img src="./assets/responsive-design-symbol-svgrepo-com.svg" alt="">
+                    <span class="material-symbols-outlined">
+                        responsive_layout
+                    </span>
                 </li>
 
                 <!-- git -->
-                
+                <li>
+                    <svg viewBox="0 0 128 128">
+                        <path fill="whitesmoke" d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"></path>
+                    </svg>    
+                </li>
+
             </ul> 
         </div>
         
     </section>
 
     <!-- Let's Connect Section -->
-    <section class="connect-section" id="connect-section">
+    <section class="connect-section" id="contact">
         <div class="wrapper">
             <div class="connect-info">
             <h2>Let's Connect</h2>
             <p>my email is</p>
             <p>my resume</p>
             <div class="personal-links-container">
-                <a class="personal-link"
-                    href="https://www.linkedin.com/in/charli-ballantyne-b08726235/"
-                    target="_blank">
-                        
+                <a href="https://www.linkedin.com/in/charli-ballantyne-b08726235/"
+                    target="_blank"
+                    class="personal-link">  
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
 
                     </a>
