@@ -211,7 +211,8 @@ section {
 .skills-wrapper h3 {
     width: fit-content;
     margin: 0 auto;
-    color: var(--background-color);
+    color: var(--color4);
+    /* text-shadow: 2px 2px var(--color4); */
 }
 .skills-container {
     display: flex;
@@ -226,8 +227,14 @@ section {
 
 
 .skills-container li {
-    /* flex-basis: 50%; */
-    max-width: 60px;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-container li p {
+    font-size: 13px;
+    /* color: black; */
 }
 
 /* styles for google font svg's responsive design, accessibility */
