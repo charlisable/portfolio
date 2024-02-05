@@ -30,15 +30,12 @@ html {
     --section-margin: 100px;
 }
 
-
+/* Global Styles */
 body {
-	background-color: var(--background-color);
+    background-color: var(--background-color);
     color: black;
 	/* font-family: ; */
-}
-
-h2, h3 {
-    margin: 0;
+    font-family: 'Merriweather', serif;
 }
 
 img {
@@ -46,15 +43,29 @@ img {
 	display: block;
 }
 
+/* typography */
+h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+
+/* links */
 a {
     text-decoration: none;
     color: black;
-    padding: 10px 0px;
 }
 
 
 li {
     list-style-type: none;
+    padding: 10px 0px;
 }
 
 /* wrapper */
@@ -106,6 +117,7 @@ section {
 }
 .title-section .wrapper {
      display: flex;
+     gap: 20px;
 }
 .title-text-container {
     width: 50%;
@@ -178,6 +190,7 @@ section {
 .about-section .wrapper {
     display: flex;
     justify-content: center;
+    gap: 10px;
 } 
 .about-me-title {
     width: 25%;
@@ -196,7 +209,18 @@ section {
     padding: 0px;
 }
 
-.skills-container svg {
+.material-symbols-outlined {
+    font-size: 60px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.skills-container svg,
+.skills-container {
     width: 60px;
 }
 
@@ -267,7 +291,7 @@ input[type=text], select, textarea {
   
 
   /* Media Queries */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     /* all sections */
     .wrapper {
         width: 90%;
@@ -312,7 +336,6 @@ input[type=text], select, textarea {
     /* title section */
     .title-section .wrapper {
         align-items: center;
-        gap: 20px;
     }
     
     .title-img {
