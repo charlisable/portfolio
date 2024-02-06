@@ -236,7 +236,11 @@ button {
 .skills-container li:hover {
     transform: scale(1.1);
 }
-.skills-container li svg path:hover {
+/* .skills-container li svg path:hover {
+    fill: black;
+} */
+
+.fill-black {
     fill: black;
 }
 
@@ -266,6 +270,7 @@ button {
 .connect-section .wrapper {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 .connect-info {
     width: 50%;
@@ -470,10 +475,6 @@ input[type=text], select, textarea {
     }
 
     /* Connect section */
-    .connect-section .wrapper {
-        gap: 20px;
-    }
-
     .connect-info,
     .contact-form {
         width: 100%;

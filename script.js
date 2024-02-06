@@ -21,3 +21,17 @@ mainBody.addEventListener('click', clickBody);
 function clickBody() {
 	navMenu.classList.remove('active');
 }
+
+// When skill svg hover, turn color black
+const htmlSvg = document.getElementById('html-svg');
+const svgPath = document.getElementById('svg-path');
+
+htmlSvg.addEventListener('mouseover', function(){
+	svgPath.classList.add('fill-black');
+});
+
+htmlSvg.addEventListener('mouseout', function(){
+	svgPath.classList.remove('fill-black');
+});
+
+
