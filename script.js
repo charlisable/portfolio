@@ -22,16 +22,78 @@ function clickBody() {
 	navMenu.classList.remove('active');
 }
 
-// When skill svg hover, turn color black
+// When HTML svg hover, turn color black
 const htmlSvg = document.getElementById('html-svg');
-const svgPath = document.getElementById('svg-path');
+const htmlPath = document.getElementById('html-path');
 
 htmlSvg.addEventListener('mouseover', function(){
-	svgPath.classList.add('fill-black');
+	htmlPath.classList.add('fill-black');
 });
-
 htmlSvg.addEventListener('mouseout', function(){
-	svgPath.classList.remove('fill-black');
+	htmlPath.classList.remove('fill-black');
 });
 
+// When CSS svg hover, turn color black
+const cssSvg = document.getElementById('css-svg');
+const cssPath = document.getElementById('css-path');
+
+cssSvg.addEventListener('mouseover', function(){
+	cssPath.classList.add('fill-black');
+});
+cssSvg.addEventListener('mouseout', function(){
+	cssPath.classList.remove('fill-black');
+});
+
+// When JS svg hover, turn color black
+const jsSvg = document.getElementById('js-svg');
+const jsPath = document.getElementById('js-path');
+
+jsSvg.addEventListener('mouseover', function(){
+	jsPath.classList.add('fill-black');
+});
+jsSvg.addEventListener('mouseout', function(){
+	jsPath.classList.remove('fill-black');
+});
+
+// When git svg hover, turn color black
+const gitSvg = document.getElementById('git-svg');
+const gitPath = document.getElementById('git-path');
+
+gitSvg.addEventListener('mouseover', function(){
+	gitPath.classList.add('fill-black');
+});
+gitSvg.addEventListener('mouseout', function(){
+	gitPath.classList.remove('fill-black');
+});
+
+
+
+
+
+
+// function for when submit has been pressed
+const sentMessage = document.getElementById('sent-message')
+const form = document.getElementById('form');
+
+form.addEventListener('submit', function(event){
+	//    prevent default behavior
+		event.preventDefault();
+
+		sentMessage.classList.remove('hidden');
+		// how to make div disappear after 3 seconds??
+		setTimeout( function hideSent(){
+			sentMessage.classList.add('hidden')
+		}, 3000)
+});
+
+// function hideSent(){
+// 	// if this DOES NOT contain hidden
+// 	if(sentMessage.classList /='hidden'){
+// 		sentMessage.classList.add('hidden');
+// 		// time 3 seconds???
+// 	}
+	
+// }
+
+// setTimeout('hideSent', 3000);
 
