@@ -314,9 +314,7 @@ button {
     z-index: 1;
 }
 
-.hidden {
-    display: none;
-}
+
 
 
 .personal-links-container {
@@ -377,9 +375,28 @@ input[type=text], textarea {
     gap: 20px;
   }
 
-  .sent-message {
-    /* margin: 20px; */
-  }
+.hidden {
+        display: none;
+    } 
+
+.fade-in {
+        animation: fadeInOut 4s linear 1 forwards;
+    }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
   /* footer */
   footer {

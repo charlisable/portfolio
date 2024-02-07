@@ -74,16 +74,28 @@ gitSvg.addEventListener('mouseout', function(){
 // function for when submit has been pressed
 const sentMessage = document.getElementById('sent-message')
 const form = document.getElementById('form');
+const firstName = document.getElementById('fname');
+const lastName = document.getElementById('lname');
+const messageInput = document.getElementById('message');
+
 
 form.addEventListener('submit', function(event){
 	//    prevent default behavior
 		event.preventDefault();
 
+		// clearing out the text
+		firstName.value = '';
+		lastName.value = '';
+		messageInput.value = '';
+
+
+		// "Message has been sent"
 		sentMessage.classList.remove('hidden');
-		// how to make div disappear after 3 seconds??
+		sentMessage.classList.add('fade-in');
+		// this hides it again after 5 seconds
 		setTimeout( function hideSent(){
 			sentMessage.classList.add('hidden')
-		}, 3000)
+		}, 5000)
 });
 
 // function hideSent(){
