@@ -93,7 +93,7 @@ form.addEventListener('submit', function(event){
 		sentMessage.classList.remove('hidden');
 		sentMessage.classList.add('fade-in');
 		// this hides it again after 5 seconds
-		setTimeout( function hideSent(){
+		setTimeout( function(){
 			sentMessage.classList.add('hidden')
 		}, 5000)
 });

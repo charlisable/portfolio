@@ -289,6 +289,10 @@ button {
 
 /* button for modal */
 #modal {
+    border: 2px solid var(--color3);
+    background: transparent;
+}
+#modal:hover {
     background-color: var(--color3);
 }
 
