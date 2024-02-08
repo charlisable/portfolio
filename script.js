@@ -16,11 +16,9 @@ hamburger.addEventListener('click', mobileMenu);
 
 const mainBody = document.querySelector('main');
 
-mainBody.addEventListener('click', clickBody);
-
-function clickBody() {
+mainBody.addEventListener('click', function() {
 	navMenu.classList.remove('active');
-}
+})
 
 // When HTML svg hover, turn color black
 const htmlSvg = document.getElementById('html-svg');
