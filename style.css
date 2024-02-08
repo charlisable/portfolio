@@ -36,14 +36,12 @@ img {
 }
 
 /* typography */
-h2, h3 {
-    margin: 0;
-}
-
 h2 {
+    margin: 0;
     font-size: 3rem;
 }
 h3 {
+    margin: 10px 0px;
     font-size: 2rem;
 }
 
@@ -93,14 +91,15 @@ h1 {
     gap: 20px;
     padding-left: 0px;
 }
+.header-links li {
+    transition: ease .5s;
+}
 
 .header-links li:hover {
     transform: scale(1.1);
-    /* transition: .2s; */
     background-color: var(--color3);
     padding: 10px;
     border-radius: 10px;
-    transition: .5s;
 }
 
 .mobile-menu {
@@ -151,11 +150,11 @@ button {
     width: 120px;
     height: 35px;
     border: none;
+    transition: ease .2s;
 }
 
 button:hover {
     transform: scale(1.05);
-    transition: ease-in-out .2s;
 }
 
 .personal-link svg,
@@ -204,13 +203,13 @@ button:hover {
 }
 .project-links div {
     margin-right: 20px;
+    transition: ease .5s;
 }
 .project-links div:hover {
     background-color: var(--color3);
     padding: 5px;
     border-radius: 10px;
     transform: scale(1.05);
-    transition: .5s;
 }
 
 /* About Me Section */
