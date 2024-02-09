@@ -316,11 +316,11 @@ button:hover {
 }
 
 /* button for modal and email */
-#modal, .email-me {
+.resume, .email-me {
     border: 2px solid var(--color3);
     background: transparent;
 }
-#modal:hover, .email-me:hover {
+.resume:hover, .email-me:hover {
     background-color: var(--color3);
 }
 
