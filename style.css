@@ -263,28 +263,23 @@ button:hover {
     flex-direction: column;
     align-items: center;
     flex-basis: 13%;
-    transition: .5s;
+    transition: .3s ease;
 }
 .skills-container li:hover {
     transform: scale(1.1);
 }
 
 /* turn svg black on hover */
-.skills-container li:hover .html-path {
-    fill: black;
-}
-.skills-container li:hover .css-path {
-    fill: black;
-}
-.skills-container li:hover .js-path {
-    fill: black;
-}
+.skills-container li:hover .html-path, 
+.skills-container li:hover .css-path,
+.skills-container li:hover .js-path,
 .skills-container li:hover .git-path {
     fill: black;
 }
 
 
-/* styles for responsive design, and accessibility svg */
+
+/* styles for responsive design and accessibility svg */
 .skills-container li .material-symbols-outlined {
     filter: invert(99%) sepia(64%) saturate(42%) hue-rotate(185deg) brightness(111%) contrast(92%);
     font-size: 60px;
