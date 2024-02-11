@@ -263,28 +263,23 @@ button:hover {
     flex-direction: column;
     align-items: center;
     flex-basis: 13%;
-    transition: .5s;
+    transition: .3s ease;
 }
 .skills-container li:hover {
     transform: scale(1.1);
 }
 
 /* turn svg black on hover */
-.skills-container li:hover .html-path {
-    fill: black;
-}
-.skills-container li:hover .css-path {
-    fill: black;
-}
-.skills-container li:hover .js-path {
-    fill: black;
-}
+.skills-container li:hover .html-path, 
+.skills-container li:hover .css-path,
+.skills-container li:hover .js-path,
 .skills-container li:hover .git-path {
     fill: black;
 }
 
 
-/* styles for responsive design, and accessibility svg */
+
+/* styles for responsive design and accessibility svg */
 .skills-container li .material-symbols-outlined {
     filter: invert(99%) sepia(64%) saturate(42%) hue-rotate(185deg) brightness(111%) contrast(92%);
     font-size: 60px;
@@ -326,9 +321,40 @@ button:hover {
     border: 2px solid var(--color3);
     background: transparent;
 }
-.resume:hover, .email-me:hover {
-    background-color: var(--color3);
+
+
+.email-me, .resume {
+    position: relative;
+    overflow: hidden;
 }
+.email-me a, .resume a {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.btn-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color3);
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+    z-index: 1;
+}
+
+.email-me:hover .btn-overlay {
+    height: 100%;
+  }
+.resume:hover .btn-overlay {
+    height: 100%;
+}
+
 
 /* modal styles */
 /* .modal-body {
