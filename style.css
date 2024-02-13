@@ -181,6 +181,7 @@ button:hover {
     padding: 10px;
     display: flex;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .project-img {
@@ -188,6 +189,9 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.project-img img {
+    border: 1px grey solid;
 }
 .project-text {
     width: 50%;
