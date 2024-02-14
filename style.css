@@ -192,9 +192,11 @@ button:hover {
 }
 .project-img img {
     border: 1px grey solid;
+    border-radius: 5px;
 }
 .project-text {
     width: 50%;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

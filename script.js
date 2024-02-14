@@ -49,14 +49,3 @@ form.addEventListener('submit', function(event){
 		}, 5000)
 });
 
-// function hideSent(){
-// 	// if this DOES NOT contain hidden
-// 	if(sentMessage.classList /='hidden'){
-// 		sentMessage.classList.add('hidden');
-// 		// time 3 seconds???
-// 	}
-	
-// }
-
-// setTimeout('hideSent', 3000);
-
