@@ -237,6 +237,13 @@ button:hover {
 .about-me-text {
     width: 60%;   
 }
+/* button font gradient */
+.gradient-text {
+    background: linear-gradient(to right, #fc6060, #6b98fe);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 18px;
+  }
 
 /* skills wrapper */
 .skills-wrapper {
