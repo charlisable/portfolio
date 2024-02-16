@@ -515,6 +515,7 @@ input[type=text], textarea {
         position: relative;
     }
     .header-links {
+        display: none;
         width: 150px;
         background-color: whitesmoke;
         border-radius: 5px;
@@ -531,6 +532,7 @@ input[type=text], textarea {
     }
 
     .header-links.active {
+        display: block;
         top: 25px;
     }
 
