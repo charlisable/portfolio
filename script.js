@@ -53,12 +53,13 @@ const messageInput = document.getElementById('message');
 //  Contact Form    
 async function handleSubmit(event) {
   event.preventDefault();
-//   clearing out the text
-		firstName.value = '';
-		lastName.value = '';
-		messageInput.value = '';
   var status = document.getElementById("sent-message");
   var data = new FormData(event.target);
+  sentMessage.classList.remove('hidden');
+  sentMessage.classList.add('fade-in');
+		setTimeout( function(){
+			sentMessage.classList.add('hidden')
+		}, 5000)
   fetch(event.target.action, {
 	method: form.method,
 	body: data,
@@ -67,7 +68,7 @@ async function handleSubmit(event) {
 	}
   }).then(response => {
 	if (response.ok) {
-	  status.innerHTML = "Thanks for your submission!";
+	//   status.innerHTML = "Thanks for your submission!";
 	  form.reset()
 	} else {
 	  response.json().then(data => {
